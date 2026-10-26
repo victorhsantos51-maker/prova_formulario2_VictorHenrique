@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spider-man</title>
+     <link rel="stylesheet" href="_css/estilo.css">
+</head>
+<body>
+    
+</body>
+</html>
+<div class="container">
+    <header>
+        <h1>Formulário Aranha</h1>
+        <p>Com grandes poderes vêm grandes responsabilidades!</p>
+    </header>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>1. Identificação do Herói</legend>
+
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Peter Parker / Homem-Aranha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail de Contato (Secret-Net):</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Sua Terra / Universo de Origem:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="universo" value="Terra-616" checked>
+                        Terra-616 (Principal)
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="universo" value="Terra-1610">
+                        Terra-1610 (Ultimate)
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="universo" value="Terra-65">
+                        Terra-65 (Gwen)
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="universo" value="Outro">
+                        Outra Dimensão
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>2. Equipamento e Preferências</legend>
+
+            <div class="form-group">
+                <label for="traje">Escolha seu Traje Favorito:</label>
+                <select id="traje" name="traje_favorito" required>
+                    <option value="" disabled selected>Selecione um traje</option>
+                    <option value="classico">Traje Clássico (Vermelho e Azul)</option>
+                    <option value="iron-spider">Iron Spider (com garras mecatrônicas)</option>
+                    <option value="black-suit">Traje Simbionte (Símbolo Branco)</option>
+                    <option value="miles-morales">Traje do Miles Morales (Preto e Vermelho)</option>
+                    <option value="2099">Traje Homem-Aranha 2099 (Miguel O'Hara)</option>
+                    <option value="stealth">Traje Furtivo (Big Time)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quais Habilidades / Gadgets você utiliza? (Marque as opções):</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="habilidades" value="lança-teias">
+                        Lançadores de Teia
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="habilidades" value="sentido-aranha">
+                        Sentido Aranha
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="habilidades" value="escalar-paredes">
+                        Aderência a Superfícies
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="habilidades" value="invisibilidade">
+                        Camuflagem / Invisibilidade
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="habilidades" value="raio-venenoso">
+                        Bio-Eletricidade (Venom Blast)
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="vilao">Maior Ameaça / Vilão Preferido:</label>
+                <select id="vilao" name="vilao_favorito">
+                    <option value="duende-verde">Duende Verde</option>
+                    <option value="doc-ock">Doutor Polvo (Doc Ock)</option>
+                    <option value="venom">Venom</option>
+                    <option value="mysterio">Mysterio</option>
+                    <option value="kraven">Kraven, o Caçador</option>
+                    <option value="mancha">O Mancha (Spot)</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Origem do Herói</legend>
+
+            <div class="form-group">
+                <label for="historia">Como você foi picado ou adquiriu seus poderes? Conta pra gente!</label>
+                <textarea id="historia" name="historia" rows="4"
+                    placeholder="Ex: Eu estava em uma excursão no laboratório da Oscorp quando uma aranha geneticamente modificada caiu no meu ombro..."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="button-group">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar Formulário</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+
+</html>
